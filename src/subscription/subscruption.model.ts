@@ -16,6 +16,7 @@ export class SubscriptionDto{
 
     //DATE OF BIRTH
     @ApiProperty({description: 'Date of birth of the subscriber', type: String, required: true})
+    dateOfBirth: string;
 
     //CONSENT 
     @ApiProperty({description: 'Flag for consent of the specific subscriber', type: Boolean, required: true})
@@ -23,5 +24,5 @@ export class SubscriptionDto{
 
     //GENDER
     @ApiProperty({description: 'Gender of the specific subscription', type: String, required: false})
-    gender: String; 
+    gender: string; 
 }

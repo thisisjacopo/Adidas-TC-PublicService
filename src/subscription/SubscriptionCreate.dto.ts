@@ -9,5 +9,5 @@ export class SubscriptionCreateDto {
     @IsNotEmpty()
     consent: boolean
     @IsNotEmpty()
-    dateOfBirth: Date
+    dateOfBirth: string
 }

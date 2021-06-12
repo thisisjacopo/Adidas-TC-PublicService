@@ -47,7 +47,7 @@ export class SubscriptionService {
             }
     }
 
-    async DeleteSubscription(id: string): Promise<SubscriptionDto> {
+    async deleteSubscription(id: string): Promise<SubscriptionDto> {
         try {
             const res: AxiosResponse<any> = await this.httpService
             .delete(`${process.env.SERVICE_URL}/${id}` || `http://localhost:5000/${id}`)
